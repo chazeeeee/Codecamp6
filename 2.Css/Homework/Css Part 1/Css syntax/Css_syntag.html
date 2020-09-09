@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework</title>
+    <style>
+      .gray {border: 10px solid rgba(219,219,219,0.63);
+border-radius: 35px;}
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><h2>CSS syntax ประกอบด้วยอะไรบ้าง</h2></td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://www.w3schools.com/css/selector.gif"
+            alt="syntax"
+            style="width: 30%; height: auto"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td><h4>รูปแบบของคำสั่ง CSS นั้นจะประกอบไปด้วย 3 ส่วน คือ</h4></td>
+      </tr>
+      <tr>
+        <td>
+          <dl>
+            <dt>1.Selector</dt>
+            <dd>
+              คือ ส่วน HTML tag ที่เราต้องการจะให้แสดงผล เช่น &#60;h1&#62;
+              ก็จะแสดงผลในส่วนของชื่อเรื่อง
+            </dd>
+            <dt>2.Property</dt>
+            <dd>
+              คือ ส่วนของคุณสมบัติที่เราต้องการให้แสดง เช่น สีตัวอักษร ,
+              ขนาดตัวอักษร
+            </dd>
+            <dt>3.Value</dt>
+            <dd>
+              คือ ค่าที่เราต้องการให้แสดง เช่น ตัวอักษรสีน้ำเงิน , ตัวอักษรขนาด
+              12 px
+            </dd>
+          </dl>
+        </td>
+      </tr>
+      <tr>
+        <td><h2>การเขียน CSS มีกี่แบบอะไรบ้าง</h2></td>
+      </tr>
+      <tr>
+        <td>
+          <h4>
+            การเขียน CSS มีได้หลายรูปแบบในการจัดเก็บโค้ด หลัก ๆ ก็จะมีอยู่ 3
+            รูปแบบ ดังนี้
+          </h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl>
+            <dt>1.Inline Style Sheet</dt>
+
+            <dd>
+              เป็นรูปแบบการเขียน CSS โดยการฝังลงไปใน line บรรทัดของ TAG HTML
+              โดยการใช้ Attribute style แล้วตามด้วย value เช่น<br />&#60;h1
+              style="font-size:20px;color:#00ffff;" &#62;test&#60;/h1&#62;<br />คือการเปลี่ยนขนาดตัวหนังสือเป็น20px
+              และเปลี่ยนสีตัวหนังสือ tag h1 เป็นสีฟ้า
+            </dd>
+            <dt>2.Internal Style Sheet</dt>
+            <dd>
+              เป็นการเขียน CSS โดยการฝังรวมไปกับโค้ดของ HTML ซึ่งโค้ดของ CSS
+              จะอยู่ในไฟล์เดียวกันกับเว็บเพจที่มีการเรียกใช้งาน CSS นั้น
+              แต่มีการแยกออกมาอยู่ภายใน TAG style เช่น<br />&#60;html&#62;<br />&nbsp;&nbsp;&nbsp;&#60;head&#62;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;style&#62;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1&nbsp;&nbsp;{font-size:20px;color:#00ffff;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/style&#62;<br />&nbsp;&nbsp;&nbsp;&#60;/head&#62;<br />&nbsp;&nbsp;&nbsp;&#60;body&#62;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;h1&#62;test&#60;/h1&#62;<br />&nbsp;&nbsp;&nbsp;&#60;/body&#62;<br />&#60;/html&#62;<br />ซึ่งการแสดงผลจะเหมือนกับข้อที่1
+              โดยสามารถใช้ครั้งละมากๆ อ่านง่ายและเป็นสัดส่วนกว่าแบบแรก
+            </dd>
+            <dt>3.External Style Sheet</dt>
+
+            <dd>
+              สำหรับรูปแบบการเขียนในลักษณะ External Style Sheet
+              จะเป็นรูปแบบที่เราสามารถเขียนโค้ดของ CSS
+              แยกเก็บออกไปเป็นไฟล์เก็บไว้ภายนอกไฟล์เว็บเพจได้
+              โดยที่เราสามารถเรียกใช้ CSS ที่แยกเก็บไว้ได้ใน 2 รูปแบบ คือ 1.
+              Linking Style Sheet 2. Import Style Sheet ไฟล์ CSS
+              ที่เราแยกเก็บไว้นี้จะมีนามสกุลไฟล์เป็น *.css เช่น mystyle.css
+              เป็นต้น
+              <br />&#60;html&#62;<br />&nbsp;&nbsp;&nbsp;&#60;head&#62;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;link
+              rel="stylesheet" href="mystyle.css"&#62;<br />&nbsp;&nbsp;&nbsp;&#60;/head&#62;<br />&nbsp;&nbsp;&nbsp;&#60;body&#62;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;h1&#62;test&#60;/h1&#62;<br />&nbsp;&nbsp;&nbsp;&#60;/body&#62;<br />&#60;/html&#62;<br />ส่วนข้างล่างเป็นการสร้างไฟล์ที่ชื่อว่า
+              mystyle.css<br />body {<br />background-color: lightblue;<br />}<br /><br />h1
+              {<br />color:#00ffff;<br />font-size:20px;<br />}<br />
+            </dd>
+          </dl>
+        </td>
+      </tr>
+      
+    </table>
+      <table>
+    <tr>
+        <td><h2>selector มีกี่แบบอะไรบ้าง</h2></td>
+      </tr>
+      <tr>
+        <td>
+          <dl>หลักๆมี6แบบ</dl>
+        <dd>1.ID</dd>
+        <dd>2.Class</dd>
+        <dd>3.Pseudo element</dd>
+        <dd>4.pseudo class</dd>
+        <dd>5.combinator</dd>
+        <dd>6.attribute selector</dd>
+        <dl>รวมๆกันจะได้ 58ตัว ตามด้านล่างนี้</dl>
+      </td>
+      </tr>
+      </table>
+    
+    <table class="gray">
+      <tr>
+        <th>Selector</th>
+        <th>Example</th>
+        <th>Example description</th>
+      </tr>
+      <tr>
+        <td>.class</td>
+        <td>.intro</td>
+        <td>Selects all elements with class="intro"</td>
+      </tr>
+    <tr>
+      <td>.class1.class2</td>
+      <td>.name1.name2</td>
+      <td>Selects all elements with both name1 and name2 set within its class attribute</td>
+    </tr>
+    <tr>
+      <td>.class1 .class2</td>
+      <td>.name1 .name2</td>
+      <td>Selects all elements with name2 that is a descendant of an element with name1</td>
+    </tr>
+    <tr>
+      <td>#id</td>
+      <td>#firstname</td>
+      <td>Selects the element with id="firstname"</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>*</td>
+      <td>Selects all elements</td>
+    </tr>
+    <tr>
+      <td>element</td>
+      <td>p</td>
+      <td>Selects all &#60;p&#62; elements</td>
+    </tr>
+    <tr>
+      <td>element.class</td>
+      <td>p.intro</td>
+      <td>Selects all &#60;p&#62; elements with class="intro"</td>
+    </tr>
+    <tr>
+      <td>element,element</td>
+      <td>div, p</td>
+      <td>Selects all <div> elements and all &#60;p&#62; elements</td>
+    </tr>
+    <tr>
+      <td>element element</td>
+      <td>	div p</td>
+      <td>Selects all &#60;p&#62; elements inside <div> elements</td>
+    </tr>
+    <tr>
+      <td>element>element</td>
+      <td>	div > p</td>
+      <td>Selects all &#60;p&#62; elements where the parent is a <div> element</td>
+    </tr>
+    <tr>
+      <td>element+element</td>
+      <td>div + p</td>
+      <td>Selects all &#60;p&#62; elements that are placed immediately after <div> elements</td>
+    </tr>
+    <tr>
+      <td>element1~element2</td>
+      <td>p ~ ul</td>
+      <td>Selects every &#60;ul&#62;element that are preceded by a &#60;p&#62; element</td>
+    </tr>
+    <tr>
+      <td>[attribute]</td>
+      <td>[target]</td>
+      <td>Selects all elements with a target attribute</td>
+    </tr>
+    <tr>
+      <td>[attribute=value]</td>
+      <td>[target=_blank]</td>
+      <td>Selects all elements with target="_blank"</td>
+    </tr>
+    <tr>
+      <td>[attribute~=value]</td>
+      <td>[title~=flower]</td>
+      <td>Selects all elements with a title attribute containing the word "flower"</td>
+    </tr>
+    <tr>
+      <td>[attribute|=value]</td>
+      <td>[lang|=en]</td>
+      <td>Selects all elements with a lang attribute value starting with "en"</td>
+    </tr>
+    <tr>
+      <td>[attribute^=value]</td>
+      <td>a[href^="https"]</td>
+      <td>Selects every &#60;a&#62; element whose href attribute value begins with "https"</td>
+    </tr>
+    <tr>
+      <td>[attribute$=value]</td>
+      <td>a[href$=".pdf"]</td>
+      <td>Selects every &#60;a&#62; element whose href attribute value ends with ".pdf"</td>
+    </tr>
+    <tr>
+      <td>[attribute*=value]</td>
+      <td>a[href*="w3schools"]</td>
+      <td>Selects every &#60;a&#62; element whose href attribute value contains the substring "w3schools"</td>
+    </tr>
+    <tr>
+      <td>:active</td>
+      <td>a:active</td>
+      <td>Selects the active link</td>
+    </tr>
+    <tr>
+      <td>::after</td>
+      <td>p::after</td>
+      <td>Insert something after the content of each &#60;p&#62; element</td>
+    </tr>
+    <tr>
+      <td>::before</td>
+      <td>p::before</td>
+      <td>Insert something before the content of each &#60;p&#62; element</td>
+    </tr>
+    <tr>
+      <td>:checked</td>
+      <td>input:checked</td>
+      <td>Selects every checked &#60;input&#62; element</td>
+    </tr>
+    <tr>
+      <td>:default</td>
+      <td>input:default</td>
+      <td>Selects the default &#60;input&#62; element</td>
+    </tr>
+    <tr>
+      <td>:disabled</td>
+      <td>input:disabled</td>
+      <td>Selects every disabled &#60;input&#62; element</td>
+    </tr>
+    <tr>
+      <td>:empty</td>
+      <td>p:empty</td>
+      <td>Selects every &#60;p&#62; element that has no children (including text nodes)</td>
+    </tr>
+    <tr>
+      <td>:enabled</td>
+      <td>input:enabled</td>
+      <td>Selects every enabled &#60;input&#62; element</td>
+    </tr>
+    <tr>
+      <td>:first-child</td>
+      <td>p:first-child</td>
+      <td>Selects every &#60;p&#62; element that is the first child of its parent</td>
+    </tr>
+    <tr>
+      <td>::first-letter</td>
+      <td>p::first-letter</td>
+      <td>Selects the first letter of every &#60;p&#62; element</td>
+    </tr>
+    <tr>
+      <td>::first-line</td>
+      <td>p::first-line</td>
+      <td>Selects the first line of every &#60;p&#62; element</td>
+    </tr>
+    <tr>
+      <td>:first-of-type</td>
+      <td>p:first-of-type</td>
+      <td>Selects every &#60;p&#62; element that is the first &#60;p&#62; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:focus</td>
+      <td>input:focus</td>
+      <td>Selects the input element which has focus</td>
+    </tr>
+    <tr>
+      <td>:hover</td>
+      <td>a:hover</td>
+      <td>Selects links on mouse over</td>
+    </tr>
+    <tr>
+      <td>:in-range</td>
+      <td>input:in-range</td>
+      <td>Selects input elements with a value within a specified range</td>
+    </tr>
+    <tr>
+      <td>:indeterminate</td>
+      <td>input:indeterminate</td>
+      <td>Selects input elements that are in an indeterminate state</td>
+    </tr>
+    <tr>
+      <td>:invalid</td>
+      <td>input:invalid</td>
+      <td>Selects all input elements with an invalid value</td>
+    </tr>
+    <tr>
+      <td>:lang(language)</td>
+      <td>p:lang(it)</td>
+      <td>Selects every &#60;p&#62; element with a lang attribute equal to "it" (Italian)</td>
+    </tr>
+    <tr>
+      <td>:last-child</td>
+      <td>p:last-child</td>
+      <td>Selects every &#60;p&#62; element that is the last child of its parent</td>
+    </tr>
+    <tr>
+      <td>:last-of-type</td>
+      <td>p:last-of-type</td>
+      <td>Selects every &#60;p&#62; element that is the last &#60;p&#62; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:link</td>
+      <td>a:link</td>
+      <td>Selects all unvisited links</td>
+    </tr>
+    <tr>
+      <td>:not(selector)</td>
+      <td>:not(p)</td>
+      <td>Selects every element that is not a &#60;p&#62; element</td>
+    </tr>
+    <tr>
+      <td>:nth-child(n)</td>
+      <td>p:nth-child(2)</td>
+      <td>Selects every &#60;p&#62; element that is the second child of its parent</td>
+    </tr>
+    <tr>
+      <td>:nth-last-child(n)</td>
+      <td>p:nth-last-child(2)</td>
+      <td>Selects every &#60;p&#62; element that is the second child of its parent, counting from the last child</td>
+    </tr>
+    <tr>
+      <td>:nth-last-of-type(n)</td>
+      <td>p:nth-last-of-type(2)</td>
+      <td>Selects every &#60;p&#62; element that is the second &#60;p&#62; element of its parent, counting from the last child</td>
+    </tr>
+    <tr>
+      <td>:nth-of-type(n)</td>
+      <td>p:nth-of-type(2)</td>
+      <td>Selects every &#60;p&#62; element that is the second &#60;p&#62; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:only-of-type</td>
+      <td>p:only-of-type</td>
+      <td>Selects every &#60;p&#62; element that is the only &#60;p&#62; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:only-child</td>
+      <td>p:only-child</td>
+      <td>Selects every &#60;p&#62; element that is the only child of its parent</td>
+    </tr>
+    <tr>
+      <td>:optional</td>
+      <td>input:optional</td>
+      <td>Selects input elements with no "required" attribute</td>
+    </tr>
+    <tr>
+      <td>:out-of-range</td>
+      <td>input:out-of-range</td>
+      <td>Selects input elements with a value outside a specified range</td>
+    </tr>
+    <tr>
+      <td>::placeholder</td>
+      <td>input::placeholder</td>
+      <td>Selects input elements with the "placeholder" attribute specified</td>
+    </tr>
+    <tr>
+      <td>:read-only</td>
+      <td>input:read-only</td>
+      <td>Selects input elements with the "readonly" attribute specified</td>
+    </tr>
+    <tr>
+      <td>:read-write</td>
+      <td>input:read-write</td>
+      <td>Selects input elements with the "readonly" attribute NOT specified</td>
+    </tr>
+    <tr>
+      <td>:required</td>
+      <td>input:required</td>
+      <td>Selects input elements with the "required" attribute specified</td>
+    </tr>
+    <tr>
+      <td>:root</td>
+      <td>:root</td>
+      <td>Selects the document's root element</td>
+    </tr>
+    <tr>
+      <td>::selection</td>
+      <td>::selection</td>
+      <td>Selects the portion of an element that is selected by a user</td>
+    </tr>
+    <tr>
+      <td>:target</td>
+      <td>#news:target</td>
+      <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+    </tr>
+    <tr>
+      <td>:valid</td>
+      <td>	input:valid</td>
+      <td>Selects all input elements with a valid value</td>
+    </tr>
+    <tr>
+      <td>:visited</td>
+      <td>a:visited</td>
+      <td>Selects all visited links</td>
+    </tr>
+    </table>
+    <table>
+      <tr>
+      <td><h2>combinator มีกี่แบบอะไรบ้าง</h2></td>
+      
+    </tr>
+    <tr>
+      <td><dl>มีด้วยอยู่4แบบ</dl>
+      <dd>1.Descendant Selector</dd>
+      <dd>2.Child Selector</dd>
+      <dd>3.Adjacent Sibling Selector</dd>
+      <dd>4.General Sibling Selector</dd></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+    
+  </body>
+</html>
